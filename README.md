@@ -1,10 +1,8 @@
 # EnvironmentBinding
 
-[![CI](https://github.com/Tunous/EnvironmentBinding/actions/workflows/main.yml/badge.svg)](https://github.com/Tunous/EnvironmentBinding/actions/workflows/main.yml)
+[![CI](https://github.com/Tunous/EnvironmentBinding/actions/workflows/main.yml/badge.svg)](https://github.com/Tunous/EnvironmentBinding/actions/workflows/main.yml) | [**Documentation**](https://tunous.github.io/EnvironmentBinding/documentation/environmentbinding/)
 
 A property wrapper that reads a binding from a SwiftUI's view’s environment. It allows you to skip writing `.wrappedValue` when working with Bindings in environment.
-
-## [**Documentation**](https://tunous.github.io/EnvironmentBinding/documentation/environmentbinding/)
 
 ## Usage
 
