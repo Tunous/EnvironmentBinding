@@ -2,6 +2,22 @@
 
 [![CI](https://github.com/Tunous/EnvironmentBinding/actions/workflows/main.yml/badge.svg)](https://github.com/Tunous/EnvironmentBinding/actions/workflows/main.yml) | [**Documentation**](https://tunous.github.io/EnvironmentBinding/documentation/environmentbinding/)
 
+**Deprecated:** It is possible to natively achieve the same functionallity as this library provides by using both `@Envrionment` and `@Binding` property wrappers:
+
+```swift
+struct PlayButton: View {
+    @Environment(\.isPlaying) @Binding var isPlaying
+
+    var body: some View {
+        Button(isPlaying ? "Pause" : "Play") {
+            isPlaying.toggle()
+        }
+    }
+}
+```
+
+___
+
 A property wrapper that reads a binding from a SwiftUI's view’s environment. It allows you to skip writing `.wrappedValue` when working with Bindings in environment.
 
 ## Usage
